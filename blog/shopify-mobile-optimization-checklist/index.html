@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopify Mobile Optimization: Seven Things That Break on Phones and Nowhere Else</title>
+    <meta
+      name="description"
+      content="Most Shopify stores are designed on a desktop and sold on a phone. Here are the seven failures that only show up on mobile, and how to find them on your own store."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#FAF7F2" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="icon" href="../../assets/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png" />
+    <link rel="manifest" href="../../site.webmanifest" />
+
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Shopify Mobile Optimization: Seven Things That Break on Phones and Nowhere Else"
+    />
+    <meta
+      property="og:description"
+      content="Most Shopify stores are designed on a desktop and sold on a phone. Here are the seven failures that only show up on mobile, and how to find them on your own store."
+    />
+    <meta property="article:published_time" content="2026-09-19" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Shopify Mobile Optimization: Seven Things That Break on Phones and Nowhere Else"
+    />
+    <meta
+      name="twitter:description"
+      content="Most Shopify stores are designed on a desktop and sold on a phone. Here are the seven failures that only show up on mobile, and how to find them on your own store."
+    />
+
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Shopify mobile optimization?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shopify mobile optimization is the work of making a store usable and fast on a phone specifically, rather than assuming a responsive theme handles it. It covers where the add-to-cart button lands after the desktop layout stacks, whether tap targets are large enough for a thumb, how much screen fixed UI consumes, how far down mobile visitors actually scroll, image cropping for narrow screens, mobile form input settings, and speed measured on real mobile connections rather than office wifi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my Shopify store convert worse on mobile than desktop?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually because the layout that works in two columns on desktop stacks into one on mobile, pushing the buy box far below the fold, while sticky headers, announcement bars and popups take up a third of the remaining screen. The elements that close a sale — reviews, size guides, shipping terms — end up below the point where most mobile visitors stop scrolling."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I test my Shopify store on mobile properly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Open your own product page on an actual phone on mobile data, not a desktop browser resized narrow, and look at what is visible before scrolling. Then measure scroll depth to find which sections real visitors reach, and run speed tests throttled on a mid-tier device rather than on office wifi."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <header class="masthead">
+      <div class="wrap masthead__inner">
+        <a class="brand" href="../../index.html">
+          <img src="../../assets/icon-192.png" alt="" width="32" height="32" />
+          VersiBible
+        </a>
+        <a class="btn btn--ghost" href="../index.html">All posts</a>
+      </div>
+    </header>
+
+    <main class="article">
+      <div class="wrap">
+        <div class="article__head">
+          <div class="article__meta">
+            <time datetime="2026-09-19">19 September 2026</time>
+            <span class="dot"></span>
+            <span>Ecommerce</span>
+          </div>
+
+          <h1>Shopify Mobile Optimization: Seven Things That Break on Phones and Nowhere Else</h1>
+
+          <p class="article__lede">
+            Most Shopify stores are designed on a desktop and sold on a phone. Here are the seven
+            failures that only show up on mobile, and how to find them on your own store.
+          </p>
+        </div>
+
+        <div class="article__body">
+          <p>
+            Most Shopify stores are built on a 27-inch monitor and bought on a 6-inch screen. That
+            gap is where the money leaks out, and it is almost invisible to the person running the
+            store, because the person running the store checks it on the laptop they built it on.
+          </p>
+          <p>
+            Mobile optimization advice usually stops at "make it responsive" and "compress your
+            images." Both are true and neither is the problem. A theme can be perfectly responsive,
+            score well on PageSpeed, and still lose the sale for reasons that only exist on a
+            phone. Here are seven of them, in the order they tend to cost the most.
+          </p>
+
+          <h2>1. The add-to-cart button falls below the fold, and stays there</h2>
+          <p>
+            On desktop, the product image sits left and the buy box sits right. Both are visible on
+            load. On mobile that two-column layout stacks: image first, then title, then price,
+            then variant pickers, then the button. On a common phone viewport, the add-to-cart
+            button can land 700–900 pixels down the page.
+          </p>
+          <p>
+            The visitor has to scroll past the entire image gallery to find out how to buy. Some
+            do. The ones who were only mildly interested do not.
+          </p>
+          <p>
+            <strong>How to check:</strong> open your own product page on a phone, do not scroll, and
+            ask whether a stranger would know this page sells something. If the answer is no, you
+            have found your first fix — either a sticky add-to-cart bar, or a shorter image block
+            above the buy box.
+          </p>
+
+          <h2>2. Variant pickers become impossible to hit accurately</h2>
+          <p>
+            Colour and size swatches that look generous on desktop compress to targets a thumb
+            cannot reliably hit. The visitor taps "M", gets "L", does not notice, and either buys
+            the wrong size — which becomes a return — or notices, corrects it, and loses a little
+            faith in the store.
+          </p>
+          <p>
+            Anything tappable wants roughly 44×44 device-independent pixels. Most default swatch
+            styling on mobile is smaller than that, and almost nobody checks, because on a desktop
+            with a mouse the target is effectively infinite.
+          </p>
+
+          <h2>3. Sticky headers and announcement bars eat the screen</h2>
+          <p>
+            A sticky header is 60px. An announcement bar is another 40px. A cookie banner takes
+            120px at the bottom. A "someone in Ohio just bought this" popup takes another 80px.
+            Individually, each one was a reasonable decision. Together they can consume close to a
+            third of a phone screen, permanently, leaving the actual product in a letterbox.
+          </p>
+          <p>
+            Add these up on your own store. The number is usually worse than anyone expects,
+            because each element was added by a different person in a different month.
+          </p>
+
+          <h2>4. The page is long enough that nobody reaches the thing that sells it</h2>
+          <p>
+            Desktop scrolling is cheap — a flick of a wheel. Mobile scrolling is a physical action
+            repeated with a thumb, and people stop doing it sooner than store owners assume. The
+            reviews section, the size guide, the shipping-and-returns block — the three things most
+            likely to close a hesitant buyer — are usually at the bottom, which on mobile means
+            most visitors never see them.
+          </p>
+          <p>
+            This is measurable rather than theoretical. Scroll-depth tracking will tell you exactly
+            what percentage of mobile sessions reach each block, and the answer is often that a
+            section the store owner considers essential is seen by under a fifth of mobile traffic.
+            A worked example:
+            <a href="https://www.dynoweb.app/blog/shopify-mobile-redesign-scroll-depth"
+              >what scroll-depth data revealed after a mobile redesign</a
+            >
+            — the useful part is the method, which you can repeat on your own store.
+          </p>
+          <p>
+            The fix is rarely "make the page shorter." It is usually "move the closing argument
+            above the point where people stop."
+          </p>
+
+          <h2>5. Images are optimised for weight but not for shape</h2>
+          <p>
+            Shopify's image pipeline handles file size well. What it does not decide for you is
+            composition. A wide lifestyle photograph that reads beautifully at 1400px wide becomes,
+            at 390px, a thin strip in which the product is one indistinct element among several.
+          </p>
+          <p>
+            Mobile wants tighter crops. If your first product image is a styled scene, the phone
+            visitor may genuinely not be able to tell which object in it is for sale.
+          </p>
+
+          <h2>6. Forms ask the phone to do the wrong thing</h2>
+          <p>Three small settings, each costing real checkouts:</p>
+          <ul>
+            <li>
+              <span
+                ><strong><code>inputmode</code> and <code>type</code>.</strong> An email field that
+                opens a full QWERTY keyboard instead of the email keyboard, or a phone field that
+                does not open the number pad, adds friction to every single entry.</span
+              >
+            </li>
+            <li>
+              <span
+                ><strong>Autofill attributes.</strong> Correct <code>autocomplete</code> values on
+                address fields let the browser fill a checkout in one tap. Missing or wrong ones
+                mean the customer types their address on a phone, which is exactly the moment
+                people give up.</span
+              >
+            </li>
+            <li>
+              <span
+                ><strong>Zoom-on-focus.</strong> iOS Safari zooms into any input with a font size
+                under 16px, which yanks the layout sideways mid-form. It looks like a bug to the
+                customer, because it is one.</span
+              >
+            </li>
+          </ul>
+
+          <h2>7. Speed is measured on a desktop connection</h2>
+          <p>
+            Running a speed test from office wifi on a good laptop tells you almost nothing about
+            the customer on mobile data on a three-year-old Android. Field data — what real
+            visitors actually experienced — diverges sharply from lab data, and mobile is where it
+            diverges most.
+          </p>
+          <p>
+            Test throttled, on a mid-tier device, or use field measurements rather than a lab
+            score. The number will be worse and the number will be true.
+          </p>
+
+          <h2>Where to start</h2>
+          <p>
+            If you do only one thing, do the first one: open your own product page on a phone and
+            look at what is visible before any scrolling. That single screen decides most of it.
+          </p>
+          <p>
+            After that, the order that tends to pay best is: tap targets, then scroll depth on the
+            sections you believe sell the product, then forms, then speed. Speed is last on this
+            list not because it does not matter, but because it is the item most stores have
+            already partly addressed and the one with the least headroom left.
+          </p>
+          <p>
+            For a fuller version of this list with the Shopify-specific details — theme sections,
+            the metafields involved, where each fix actually lives — there is
+            <a href="https://www.dynoweb.app/solutions/shopify-mobile-optimization"
+              >a breakdown of Shopify-specific mobile fixes</a
+            >
+            worth reading alongside this.
+          </p>
+          <p>
+            The general principle holds regardless of tooling: you cannot optimise a mobile
+            experience you have never actually had. Pick up the phone.
+          </p>
+        </div>
+
+        <div class="article__foot">
+          <div class="article__tags">
+            <span>shopify</span>
+            <span>mobile optimization</span>
+            <span>ecommerce</span>
+            <span>conversion</span>
+          </div>
+          <a class="back" href="../index.html">← All posts</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="night footer">
+      <div class="wrap">
+        <div class="footer__grid">
+          <div>
+            <a class="brand" href="../../index.html">
+              <img src="../../assets/icon-192.png" alt="" width="32" height="32" />
+              VersiBible
+            </a>
+            <p class="footer__tag">
+              A Bible-literacy app for people who own a Bible and never quite understood it. Coming
+              soon to iOS.
+            </p>
+          </div>
+          <nav class="footer__links" aria-label="Footer">
+            <a href="../index.html">Blog</a>
+            <a href="../../index.html#how">How it works</a>
+            <a href="../../index.html#features">Features</a>
+            <a href="../../index.html#pricing">Pricing</a>
+            <a href="../../privacy.html">Privacy</a>
+          </nav>
+        </div>
+        <div class="footer__legal">
+          <span>© 2026 VersiBible. All rights reserved.</span>
+          <span>Scripture from public-domain translations via the Free Use Bible API.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
